@@ -1,0 +1,165 @@
+/*
+CTRL + ALT + C = Color Picker
+ALT + CTRL + B =  Atom Beautify
+
+Pseudo Clases
+Psuedo Elementos
+en CSS
+*/
+
+html{
+  font-family: 'Do Hyeon', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #d500f9;
+}
+a:hover{
+  opacity: .3;
+}
+.title{
+  text-transform: uppercase;
+  text-align: center;
+}
+.container{
+  background: #9CECFB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100vh;
+display: flex; /*Coloca los emelentos en modo flex con las siguientes propiedades*/
+align-items: center;
+justify-content: center;
+}
+.content{/*Centrar un elemento*/
+  /*Dentro del contenedor le damos su altura y anchura maxima*/
+  max-width: 960px;
+  /*Le decimos que dentro del contenedor ocupe todo sin dejar espacio*/
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  box-shadow:0px 3px 6px rgb(0, 0, 0,.5),0px 3px 6px rgb(0, 0, 0,.5);/* Sombras */
+  border-radius: 3px;
+  position: relative;/*para la x de cierre  */
+  padding: 1.8em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.content{
+  padding: 1em;
+}
+td{
+  display: block;
+  width: 100%;
+}
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #642b73;
+}
+th{
+  display: none;
+}
+.actions{
+  position: absolute;
+  top: 1em;/*Se queda donde esta*/
+  right: 1em;
+}
+.close{
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #624b73;
+  display: inline-block;
+  box-shadow: 0 3px 6x rgba(0,0,0,.16),0 3px 6x rgba(0,0,0,.16);
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paragraph{
+  line-height: 1.8em;
+  font-weight: 300;
+}
+.table{
+  width: 100%;
+  border-spacing:0;
+}
+/* td{
+  border: solid 1px;
+} */
+.table td, .table th{
+  padding: 1em;
+  text-align: left;
+}
+.table tr:nth-child(even){
+  background-color: rgb(74, 164, 228);
+}
+.fa-star, .far{
+  color: rgb(231, 252, 59);
+}
+.title-item{
+  /* border-bottom-style: solid;
+  border-width:2px;
+  border-color: #C6426E; */
+  border-bottom: solid 4px #C6426E;
+  padding-bottom: 1em;
+}
+.position{
+  background-color: #C6426E;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+.address{
+  font-weight: bold;
+  color: #642b73;
+  font-size: 1.2em;
+  margin-top: 2em;
+  display: inline-block;
+}
+.main-image{
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+
+}
+@media (min-width:900px){
+  th{
+    display: table-cell;
+  }
+  td{
+    width: auto;
+    display: table-cell;
+  }
+  td:nth-of-type(1){
+    font-size: 1em;
+  }
+  .content{
+    padding: 1.8em;
+  }
+}
+@media {min-height:540px}{
+  .content{
+    height: 500px;
+  }
+}
+/* p {
+  color: red;
+}
+
+.red {
+  width: 100px;
+  height: 200px;
+  background-color: red;
+}
+
+#boton-pago {
+  background-color:rgba(#1ac740, 0.8)
+}
+
+td {
+  border: solid 1px;
+} */

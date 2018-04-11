@@ -1,0 +1,25 @@
+/*
+position:
+static:No afecta nada por defecto ya viene asi
+relative: Moficara las posiciones usando las propiedas tomando el origen donde se cuentra
+absolute: Es relativa al contenedor mas cercano
+fixed: es relativo al viewport  se mueve con el
+sticky: Se vuelve relativo o absulto seguan sea el caso
+no se sale de sus contenedor y este le sigue
+Un elemento abosulto es relativo a su contenedor, este adopata las dimensiones
+de donde se encuentro dentro, el pirmer contenedor debe ser relative, si el
+contenedor no es relativo, el elemento es relativo a cualquier lugar de la pantalla
+
+/*
+Propiedades que afectan la posicione de un elemento:
+top, bottom, left, right
+*/
+
+div{
+  background-color: red;
+  width: 200px;
+  height: 100px;
+  position:fixed;
+  top: 100px;
+  left: 200px;
+}
